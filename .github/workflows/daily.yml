@@ -1,0 +1,12 @@
+name: Google Indexing
+on:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  google-indexing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: robingenz/action-google-indexing@v1.0.0
+        with:
+          siteUrl: 'yagc.tahriver.online'
+          gcpServiceAccountKey: ${{ secrets.GCP_SA_KEY }}
