@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: robingenz/action-google-indexing@v1.0.0
         with:
-          siteUrl: 'yagc.tahriver.online'
+          siteUrl: 'https://yagc.tahriver.online'
           gcpServiceAccountKey: ${{ secrets.GCP_SA_KEY }}
