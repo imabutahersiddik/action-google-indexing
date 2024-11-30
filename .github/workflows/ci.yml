@@ -39,5 +39,5 @@ jobs:
       - name: Test Local Action
         uses: ./
         with:
-          siteUrl: 'yagc.tahriver.online'
+          siteUrl: 'https://yagc.tahriver.online/'
           gcpServiceAccountKey: ${{ secrets.GCP_SA_KEY }}
